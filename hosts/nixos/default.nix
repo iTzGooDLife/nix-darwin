@@ -225,10 +225,6 @@ let user = "cvera";
 
   };
 
-  # When emacs builds from no cache, it exceeds the 90s timeout default
-  systemd.user.services.emacs = {
-    serviceConfig.TimeoutStartSec = "7min";
-  };
 
   # Enable sound
   # sound.enable = true;
@@ -288,7 +284,6 @@ let user = "cvera";
 
   fonts.packages = with pkgs; [
     dejavu_fonts
-    emacs-all-the-icons-fonts
     feather-font # from overlay
     jetbrains-mono
     font-awesome
