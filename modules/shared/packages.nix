@@ -15,6 +15,7 @@ with pkgs; [
   sqlite
   wget
   zip
+  opencommit
 
   # Encryption and security tools
   age

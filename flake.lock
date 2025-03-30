@@ -267,11 +267,11 @@
     "homebrew-cask": {
       "flake": false,
       "locked": {
-        "lastModified": 1743275751,
-        "narHash": "sha256-n+6yhxgkBXKSEZ70Osrx5NHgQixh8p3//XcW5FmwXpc=",
+        "lastModified": 1743294654,
+        "narHash": "sha256-gAwxZkGbD7OxlQlpkharp4Nt67N94lGZtK60wkq5RfQ=",
         "owner": "homebrew",
         "repo": "homebrew-cask",
-        "rev": "e50f5a9d2462359c7e0ed4e7093d9a7815674007",
+        "rev": "25a563d44f6cfd5b8d70d521f114e1e53305547e",
         "type": "github"
       },
       "original": {
@@ -283,11 +283,11 @@
     "homebrew-core": {
       "flake": false,
       "locked": {
-        "lastModified": 1743282257,
-        "narHash": "sha256-UDmsoMC5cL2grxxRr1SfJgGQ66+oQMjQpyMwLtMSt64=",
+        "lastModified": 1743294921,
+        "narHash": "sha256-5bRHfkd1voR9db+wvuOSU7n0bKkBRynS+8Jxr9ZQ7yw=",
         "owner": "homebrew",
         "repo": "homebrew-core",
-        "rev": "7208cd4718f1e6ab72f32b6a3fd5ec691b4ba87c",
+        "rev": "ff8e1cda855c350a89b5f32d7854c108ee9f36d3",
         "type": "github"
       },
       "original": {
@@ -484,11 +484,11 @@
         "nixvim": "nixvim_2"
       },
       "locked": {
-        "lastModified": 1743278864,
-        "narHash": "sha256-FQhh8C4Bcy72xEvsPbvE7LHR873VKP50n0V/35CP0YU=",
+        "lastModified": 1743294947,
+        "narHash": "sha256-U6mZwzmoFWXQx5ZyebD+r6az4j9xYSSS34ZjG+2VYa8=",
         "owner": "caverav",
         "repo": "nixvim",
-        "rev": "deb3b76ad853b21d6c7503d6dd61b11cb677a147",
+        "rev": "e15597a41a778d9856f2f30020c93a780bcbde2f",
         "type": "github"
       },
       "original": {

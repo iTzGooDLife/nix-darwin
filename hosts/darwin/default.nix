@@ -67,4 +67,5 @@ let user = "cvera"; in
       };
     };
   };
+  services.aerospace.enable = true;
 }
