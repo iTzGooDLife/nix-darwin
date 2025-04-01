@@ -50,11 +50,11 @@ let user = "cvera"; in
       };
 
       dock = {
-        autohide = false;
+        autohide = true;
         show-recents = false;
         launchanim = true;
         orientation = "bottom";
-        tilesize = 48;
+        tilesize = 40;
       };
 
       finder = {
@@ -95,9 +95,9 @@ let user = "cvera"; in
         inner.horizontal = 20;
         inner.vertical = 20;
         outer.left = 20;
-        outer.bottom = 20;
+        outer.bottom = 10;
         outer.top = 10;
-        outer.right = 80;
+        outer.right = 20;
       };
 
       mode.main.binding = {
@@ -131,8 +131,7 @@ let user = "cvera"; in
         "alt-shift-tab" = "move-workspace-to-monitor --wrap-around next";
         "alt-shift-comma" = "mode service";
         "alt-shift-enter" = "mode apps";
-        "alt-enter" = "exec-and-forget open -a /Applications/Nix Apps/AeroSpace.app";
-        "alt-q" = "close";
+        "alt-enter" = "exec-and-forget open -a /Applications/Nix Apps/Alacritty.app";
       };
 
       mode.service.binding = {

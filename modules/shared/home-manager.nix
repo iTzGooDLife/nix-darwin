@@ -8,6 +8,14 @@ let name = "Camilo";
   zsh = {
     enable = true;
     autocd = false;
+    zplug = {
+      enable = true;
+      plugins = [
+        { name = "zsh-users/zsh-autosuggestions"; }
+        { name = "zsh-users/zsh-completions"; }
+        { name = "softmoth/zsh-vim-mode"; }
+      ];
+    };
     plugins = [
       {
         name = "powerlevel10k";
@@ -40,7 +48,7 @@ let name = "Camilo";
 
       export ALTERNATE_EDITOR=""
       export EDITOR="nvim"
-      export VISUAL="neovide"
+      export VISUAL="code"
 
       # nix shortcuts
       shell() {
