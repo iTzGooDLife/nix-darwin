@@ -5,5 +5,4 @@ let
   xdg_dataHome   = "${config.users.users.${user}.home}/.local/share";
   xdg_stateHome  = "${config.users.users.${user}.home}/.local/state"; in
 {
- ".config/aerospace/aerospace.toml".text = builtins.readFile ./aerospace/aerospace.toml;
 }

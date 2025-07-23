@@ -31,6 +31,7 @@ let name = "Camilo";
 
     initExtraFirst = ''
       source ~/.zshrc_secrets
+      export PATH=$PATH:/Users/${user}/Library/Android/sdk/platform-tools/
 
 
       if [[ -f /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh ]]; then
@@ -61,6 +62,13 @@ let name = "Camilo";
       # Always color ls and group directories
       alias ls='ls --color=auto'
       alias ll='ls -lah --color=auto'
+      alias repo-clone='m gitlab:fluidattacks/universe@trunk /melts pull-repos --group'
+      alias push-repos='m gitlab:fluidattacks/universe@trunk /melts push-repos --group'
+      alias progress='python3 /Users/cvera/fluid/mentoria/FAtoolsuite/progress/main.py'
+
+      export NVM_DIR="$HOME/.nvm"
+      [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+      [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
     '';
   };
 
@@ -109,9 +117,9 @@ let name = "Camilo";
         ];
       };
 
-      dynamic_padding = true;
-      decorations = "full";
-      title = "Terminal";
+      # dynamic_padding = true;
+      # decorations = "full";
+      # title = "Terminal";
       # class = {
       #   instance = "Alacritty";
       #   general = "Alacritty";
@@ -251,6 +259,13 @@ let name = "Camilo";
       bind-key -T copy-mode-vi 'C-k' select-pane -U
       bind-key -T copy-mode-vi 'C-l' select-pane -R
       bind-key -T copy-mode-vi 'C-\' select-pane -l
+      set-option -g default-shell /bin/zsh
+      set-option -g default-command "zsh"
+      set-window-option -g mode-keys vi
+      bind-key -T copy-mode-vi v send -X begin-selection
+      bind-key -T copy-mode-vi V send -X select-line
+      set -s copy-command 'pbcopy'
+      bind-key -T copy-mode-vi y send -X copy-pipe-and-cancel 'pbcopy'
       '';
     };
 }

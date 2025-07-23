@@ -53,6 +53,7 @@ in
             cfg.entries;
         in
         {
+/*
           system.activationScripts.postUserActivation.text = ''
             echo >&2 "Setting up the Dock..."
             haveURIs="$(${dockutil}/bin/dockutil --list | ${pkgs.coreutils}/bin/cut -f2)"
@@ -65,6 +66,7 @@ in
               echo >&2 "Dock setup complete."
             fi
           '';
+*/
         }
       );
 }

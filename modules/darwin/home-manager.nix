@@ -10,8 +10,6 @@ in
   imports = [
    ./dock
    inputs.home-manager.darwinModules.home-manager
-
-   ./nixvim
   ];
 
   # It me

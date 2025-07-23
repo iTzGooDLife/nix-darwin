@@ -10,6 +10,7 @@ let user = "cvera"; in
 
   nix = {
     package = pkgs.nix;
+    enable = false;
 
     settings = {
       trusted-users = [ "@admin" "${user}" ];
@@ -17,11 +18,6 @@ let user = "cvera"; in
       trusted-public-keys = [ "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=" ];
     };
 
-    gc = {
-      automatic = true;
-      interval = { Weekday = 0; Hour = 2; Minute = 0; };
-      options = "--delete-older-than 30d";
-    };
 
     extraOptions = ''
       experimental-features = nix-command flakes
@@ -34,8 +30,8 @@ let user = "cvera"; in
   ] ++ (import ../../modules/shared/packages.nix { inherit pkgs; });
 
   system = {
-    stateVersion = 4;
-
+    stateVersion = 5;
+    primaryUser = "cvera";
     defaults = {
       NSGlobalDomain = {
         AppleShowAllExtensions = true;
@@ -131,7 +127,7 @@ let user = "cvera"; in
         "alt-shift-tab" = "move-workspace-to-monitor --wrap-around next";
         "alt-shift-comma" = "mode service";
         "alt-shift-enter" = "mode apps";
-        "alt-enter" = "exec-and-forget open -a /Applications/Nix Apps/Alacritty.app";
+        "alt-enter" = "exec-and-forget open -a '/Applications/Nix Apps/Alacritty.app'";
       };
 
       mode.service.binding = {
