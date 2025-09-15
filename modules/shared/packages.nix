@@ -32,6 +32,7 @@ with pkgs; [
   neovide
   obsidian
   pam-reattach
+  gh
 
   # deps
   mono
@@ -55,6 +56,7 @@ with pkgs; [
   noto-fonts
   noto-fonts-emoji
   meslo-lgs-nf
+  nerd-fonts.jetbrains-mono
 
   # Node.js development tools
   # nodePackages.npm # globally install npm
@@ -77,4 +79,13 @@ with pkgs; [
   # Python packages
   python3
   virtualenv
+
+  # Languages
+  nodejs_20
+  ## PHP ##
+  php83
+  php83Packages.composer
+  ## PHP ##
+  ruby
+  go
 ]
