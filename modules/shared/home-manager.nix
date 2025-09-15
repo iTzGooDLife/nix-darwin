@@ -58,7 +58,7 @@ let name = "Julio";
       }
 
       # Use difftastic, syntax-aware diffing
-      alias diff=diff
+      alias diff=difft
 
       # Always color ls and group directories
       alias ls='ls --color=auto'
