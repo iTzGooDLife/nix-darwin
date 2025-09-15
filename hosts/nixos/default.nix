@@ -1,7 +1,7 @@
 { config, inputs, pkgs, ... }:
 
-let user = "cvera";
-    keys = [ "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOk8iAnIaa1deoc7jw8YACPNVka1ZFJxhnU4G74TmS+p" ]; in
+let user = "jcerda";
+    keys = [ "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDW+UvbxSrsnCuVMc9q4CDaydy7uz2kNjHtTV2qzdnNn1GXZhaUO6EsjSGSYn9xgJy52T14/gATlJxtH+SlY6Fh39cVAsnzg83ISnnBVWgWSzDHeM5PICR5rAt8ll6mtjonG+++SS2RhFNtoou+mqs0SZ9Ux4SLx7Ej+rlqHsPjL1sN9oVpTa2HdXJQERXUzMHPKap/FN+8wkym5MDfCztDAjzzFhsSqOGgiccXFiEv0saNH9SnhqlvIpBNOwFx9ebas7c4NvCk4qkiGlzaKWOu/q9BFrP5ownYGkLKBabt4sj1JwBnB04mgmXARQicJJpus0fi16cKl2izjnp/FpRLO4fMM+R0kRVOr4J57Ax/bkL7vHTVHP2cmE7MCQOZCBXKvRIQJFVl9p9xaJ8Fc7K/9SkjOzx9P01WrXH/aUlRwjctrbYHn6i+ObILet4bhHmlQujMiVuzIZ5WZxFDkjhXueXqdfIz1a5AJLSr71LQbyex9GeMxmdrrEnKUhaIsqc= julio@Julius" ]; in
 {
   imports = [
     ../../modules/nixos/disk-config.nix

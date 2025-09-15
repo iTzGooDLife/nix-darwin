@@ -1,6 +1,6 @@
 { inputs, config, pkgs, lib, ... }:
 
-let user = "cvera"; in
+let user = "jcerda"; in
 
 {
   imports = [
@@ -37,7 +37,7 @@ let user = "cvera"; in
 
   system = {
     stateVersion = 5;
-    primaryUser = "cvera";
+    primaryUser = "jcerda";
     defaults = {
       NSGlobalDomain = {
         AppleShowAllExtensions = true;
@@ -94,12 +94,12 @@ let user = "cvera"; in
       "key-mapping".preset = "qwerty";
 
       gaps = {
-        inner.horizontal = 20;
-        inner.vertical = 20;
-        outer.left = 20;
+        inner.horizontal = 10;
+        inner.vertical = 10;
+        outer.left = 10;
         outer.bottom = 10;
         outer.top = 10;
-        outer.right = 20;
+        outer.right = 10;
       };
 
       mode.main.binding = {

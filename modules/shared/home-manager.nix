@@ -1,8 +1,8 @@
 { inputs, config, pkgs, lib, ... }:
 
-let name = "Camilo";
-    user = "cvera";
-    email = "cvera@fluidattacks.com"; in
+let name = "Julio";
+    user = "jcerda";
+    email = "jcerda@fluidattacks.com"; in
 {
   # Shared shell configuration
   zsh = {
