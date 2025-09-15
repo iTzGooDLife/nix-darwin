@@ -139,7 +139,7 @@ let user = "jcerda"; in
         "alt-shift-tab" = "move-workspace-to-monitor --wrap-around next";
         "alt-shift-comma" = "mode service";
         "alt-shift-enter" = "mode apps";
-        "alt-enter" = "exec-and-forget open -a '/Applications/Nix Apps/Alacritty.app'";
+        # TODO: Fix hardcoded path
         "alt-enter" = "exec-and-forget open -a '/Users/jcerda/.nix-profile/Applications/Alacritty.app'";
       };
 
