@@ -161,30 +161,48 @@ let name = "Julio";
 
       colors = {
         primary = {
-          background = "0x1f2528";
-          foreground = "0xc0c5ce";
+          # background = "0x1f2528";
+          # foreground = "0xc0c5ce";
+          background = "#1f1d29";
+          foreground = "#eaeaea";
         };
 
         normal = {
-          black = "0x1f2528";
-          red = "0xec5f67";
-          green = "0x99c794";
-          yellow = "0xfac863";
-          blue = "0x6699cc";
-          magenta = "0xc594c5";
-          cyan = "0x5fb3b3";
-          white = "0xc0c5ce";
+          # black = "0x1f2528";
+          # red = "0xec5f67";
+          # green = "0x99c794";
+          # yellow = "0xfac863";
+          # blue = "0x6699cc";
+          # magenta = "0xc594c5";
+          # cyan = "0x5fb3b3";
+          # white = "0xc0c5ce";
+          black = "#6f6e85";
+          red = "#ea6f91";
+          green = "#9bced7";
+          yellow = "#f1ca93";
+          blue = "#34738e";
+          magenta = "#c3a5e6";
+          cyan = "#eabbb9";
+          white = "#faebd7";
         };
 
         bright = {
-          black = "0x65737e";
-          red = "0xec5f67";
-          green = "0x99c794";
-          yellow = "0xfac863";
-          blue = "0x6699cc";
-          magenta = "0xc594c5";
-          cyan = "0x5fb3b3";
-          white = "0xd8dee9";
+          # black = "0x65737e";
+          # red = "0xec5f67";
+          # green = "0x99c794";
+          # yellow = "0xfac863";
+          # blue = "0x6699cc";
+          # magenta = "0xc594c5";
+          # cyan = "0x5fb3b3";
+          # white = "0xd8dee9";
+          black = "#6f6e85";
+          red = "#ea6f91";
+          green = "#9bced7";
+          yellow = "#f1ca93";
+          blue = "#34738e";
+          magenta = "#c3a5e6";
+          cyan = "#ebbcba";
+          white = "#e0def4";
         };
       };
     };
