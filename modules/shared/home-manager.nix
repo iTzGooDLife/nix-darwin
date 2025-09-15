@@ -131,16 +131,18 @@ let name = "Julio";
       };
 
       window = {
-        opacity = 1.0;
+        opacity = 0.95;
         padding = {
-          x = 24;
-          y = 24;
+          x = 15;
+          y = 15;
         };
       };
 
       font = {
         normal = {
-          family = "MesloLGS NF";
+          # family = "MesloLGS NF";
+          # style = "Regular";
+          family = "JetBrainsMono Nerd Font";
           style = "Regular";
         };
         size = lib.mkMerge [
