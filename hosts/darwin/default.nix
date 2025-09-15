@@ -1,4 +1,4 @@
-{ inputs, config, pkgs, ... }:
+{ inputs, config, pkgs, lib, ... }:
 
 let user = "cvera"; in
 
@@ -28,6 +28,12 @@ let user = "cvera"; in
 
   environment.systemPackages = with pkgs; [
   ] ++ (import ../../modules/shared/packages.nix { inherit pkgs; });
+
+  # security.pam.services.sudo_local.touchIdAuth = true;
+  security.pam.services.sudo_local.text = ''
+      auth       optional       ${lib.getLib pkgs.pam-reattach}/lib/pam/pam_reattach.so
+      auth       sufficient     pam_tid.so
+    '';
 
   system = {
     stateVersion = 5;

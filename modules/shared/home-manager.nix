@@ -43,6 +43,7 @@ let name = "Camilo";
       export PATH=$HOME/.pnpm-packages/bin:$HOME/.pnpm-packages:$PATH
       export PATH=$HOME/.npm-packages/bin:$HOME/bin:$PATH
       export PATH=$HOME/.local/share/bin:$PATH
+      export PATH=/opt/homebrew/bin/:$PATH
 
       # Remove history data we don't want to see
       export HISTIGNORE="pwd:ls:cd"
@@ -57,14 +58,14 @@ let name = "Camilo";
       }
 
       # Use difftastic, syntax-aware diffing
-      alias diff=difft
+      alias diff=diff
 
       # Always color ls and group directories
       alias ls='ls --color=auto'
       alias ll='ls -lah --color=auto'
       alias repo-clone='m gitlab:fluidattacks/universe@trunk /melts pull-repos --group'
       alias push-repos='m gitlab:fluidattacks/universe@trunk /melts push-repos --group'
-      alias progress='python3 /Users/cvera/fluid/mentoria/FAtoolsuite/progress/main.py'
+      alias signals='nix run "gitlab:fluidattacks/universe?dir=signals"'
 
       export NVM_DIR="$HOME/.nvm"
       [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm

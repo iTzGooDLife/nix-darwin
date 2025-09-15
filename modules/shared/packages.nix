@@ -2,6 +2,7 @@
 
 with pkgs; [
   # General packages for development and system management
+
   alacritty
   aspell
   aspellDicts.en
@@ -25,6 +26,15 @@ with pkgs; [
   apktool
   openjdk
   libpcap
+  flameshot
+  wireguard-tools
+  _7zz
+  neovide
+  obsidian
+  pam-reattach
+
+  # deps
+  mono
 
   # Encryption and security tools
   age
