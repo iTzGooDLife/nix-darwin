@@ -142,7 +142,7 @@ let name = "Julio";
         normal = {
           # family = "MesloLGS NF";
           # style = "Regular";
-          family = "JetBrainsMono Nerd Font";
+          family = "JetBrainsMonoNL Nerd Font";
           style = "Regular";
         };
         size = lib.mkMerge [
