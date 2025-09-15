@@ -125,15 +125,22 @@ let user = "jcerda"; in
         "alt-2" = "workspace 2";
         "alt-3" = "workspace 3";
         "alt-4" = "workspace 4";
+        "alt-5" = "workspace 5";
+        "alt-6" = "workspace 6";
+        "alt-7" = "workspace 7";
         "alt-shift-1" = "move-node-to-workspace 1 --focus-follows-window";
         "alt-shift-2" = "move-node-to-workspace 2 --focus-follows-window";
         "alt-shift-3" = "move-node-to-workspace 3 --focus-follows-window";
         "alt-shift-4" = "move-node-to-workspace 4 --focus-follows-window";
+        "alt-shift-5" = "move-node-to-workspace 5 --focus-follows-window";
+        "alt-shift-6" = "move-node-to-workspace 6 --focus-follows-window";
+        "alt-shift-7" = "move-node-to-workspace 7 --focus-follows-window";
         "alt-tab" = "workspace-back-and-forth";
         "alt-shift-tab" = "move-workspace-to-monitor --wrap-around next";
         "alt-shift-comma" = "mode service";
         "alt-shift-enter" = "mode apps";
         "alt-enter" = "exec-and-forget open -a '/Applications/Nix Apps/Alacritty.app'";
+        "alt-enter" = "exec-and-forget open -a '/Users/jcerda/.nix-profile/Applications/Alacritty.app'";
       };
 
       mode.service.binding = {
