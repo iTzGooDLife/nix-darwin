@@ -30,7 +30,7 @@ let name = "Julio";
     ];
 
     initExtraFirst = ''
-      source ~/.zshrc_secrets
+      # source ~/.zshrc_secrets
       export PATH=$PATH:/Users/${user}/Library/Android/sdk/platform-tools/
 
 
@@ -58,7 +58,7 @@ let name = "Julio";
       }
 
       # Use difftastic, syntax-aware diffing
-      alias diff=diff
+      # alias diff=diff
 
       # Always color ls and group directories
       alias ls='ls --color=auto'
@@ -66,6 +66,37 @@ let name = "Julio";
       alias repo-clone='m gitlab:fluidattacks/universe@trunk /melts pull-repos --group'
       alias push-repos='m gitlab:fluidattacks/universe@trunk /melts push-repos --group'
       alias signals='nix run "gitlab:fluidattacks/universe?dir=signals"'
+
+
+      #### Own aliases ####
+      alias tree="tree -C"
+      alias watch="watch -n 1"
+      alias grep='grep --color=auto'
+
+      ## Git
+      alias ga='git add'
+      alias gc='git commit -v'
+      alias gd='git diff'
+      alias gst='git status'
+
+      alias gco='git checkout'
+      alias gcm='git checkout master'
+
+      alias gb='git branch'
+
+
+      # view remote branches
+      alias gbr='git branch --remote'
+
+      alias gup='git pull --rebase'
+      alias gp='git push'
+      alias gl='git pull'
+      alias gr='git restore'
+
+      # push a newly created local branch to origin
+      alias gpsup='git push --set-upstream origin $(git_current_branch)'
+      #### Own aliases ####
+
 
       export NVM_DIR="$HOME/.nvm"
       [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
