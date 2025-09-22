@@ -78,6 +78,7 @@ with pkgs; [
 
   # Python packages
   python3
+  pip3
   virtualenv
 
   # Languages
