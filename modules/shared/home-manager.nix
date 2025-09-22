@@ -72,6 +72,7 @@ let name = "Julio";
       alias tree="tree -C"
       alias watch="watch -n 1"
       alias grep='grep --color=auto'
+      alias v="nvim"
 
       ## Git
       alias ga='git add'
