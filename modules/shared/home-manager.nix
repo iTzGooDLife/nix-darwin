@@ -63,9 +63,9 @@ let name = "Julio";
       # Always color ls and group directories
       alias ls='ls --color=auto'
       alias ll='ls -lah --color=auto'
-      alias repo-clone='m gitlab:fluidattacks/universe@trunk /melts pull-repos --group'
-      alias push-repos='m gitlab:fluidattacks/universe@trunk /melts push-repos --group'
-      alias signals='nix run "gitlab:fluidattacks/universe?dir=signals"'
+      alias repo-clone='m github:fluidattacks/universe@trunk /melts pull-repos --group'
+      alias push-repos='m github:fluidattacks/universe@trunk /melts push-repos --group'
+      alias signals='nix run "github:fluidattacks/universe?dir=signals"'
 
 
       #### Own aliases ####
