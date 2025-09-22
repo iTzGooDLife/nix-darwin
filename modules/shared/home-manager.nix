@@ -30,7 +30,7 @@ let name = "Julio";
     ];
 
     initExtraFirst = ''
-      # source ~/.zshrc_secrets
+      source ~/.zshrc_secrets
       export PATH=$PATH:/Users/${user}/Library/Android/sdk/platform-tools/
 
 
