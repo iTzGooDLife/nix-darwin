@@ -78,7 +78,7 @@ with pkgs; [
 
   # Python packages
   python3
-  pip3
+  python313Packages.pip
   virtualenv
 
   # Languages
