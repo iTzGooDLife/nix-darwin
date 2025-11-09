@@ -97,6 +97,8 @@ let name = "Julio";
 
       # push a newly created local branch to origin
       alias gpsup='git push --set-upstream origin $(git_current_branch)'
+
+      alias brew-scrcpy='/opt/homebrew/bin/scrcpy'
       #### Own aliases ####
 
 
