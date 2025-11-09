@@ -33,6 +33,7 @@ with pkgs; [
   obsidian
   pam-reattach
   gh
+  jadx
 
   # deps
   mono
