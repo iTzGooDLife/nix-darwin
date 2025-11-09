@@ -63,9 +63,10 @@ let name = "Julio";
       # Always color ls and group directories
       alias ls='ls --color=auto'
       alias ll='ls -lah --color=auto'
-      alias repo-clone='m github:fluidattacks/universe@trunk /melts pull-repos --group'
-      alias push-repos='m github:fluidattacks/universe@trunk /melts push-repos --group'
+      alias repo-clone='nix run "github:fluidattacks/universe?dir=melts" -- pull-repos --group'
+      alias push-repos='nix run "github:fluidattacks/universe?dir=melts" -- push-repos --group'
       alias signals='nix run "github:fluidattacks/universe?dir=signals"'
+      alias create_csv='function _create_csv() { local prefix="$1"; local name="$2"; local id="$3"; local padded_id="${id}0000001"; local filename="${prefix}-${name}-${padded_id}.csv"; echo "type,data" > "$filename"; echo "Archivo creado con encabezados: $filename"; }; _create_csv'
 
 
       #### Own aliases ####
