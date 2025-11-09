@@ -99,6 +99,8 @@ let name = "Julio";
       alias gpsup='git push --set-upstream origin $(git_current_branch)'
 
       alias brew-scrcpy='/opt/homebrew/bin/scrcpy'
+
+      alias vid-convert="ffmpeg -i $1 -f webm -c:v libvpx -b:v 2M -acodec libvorbis $2"
       #### Own aliases ####
 
 
