@@ -128,6 +128,7 @@ let user = "jcerda"; in
         "alt-5" = "workspace 5";
         "alt-6" = "workspace 6";
         "alt-7" = "workspace 7";
+        "alt-8" = "workspace 8";
         "alt-shift-1" = "move-node-to-workspace 1 --focus-follows-window";
         "alt-shift-2" = "move-node-to-workspace 2 --focus-follows-window";
         "alt-shift-3" = "move-node-to-workspace 3 --focus-follows-window";
@@ -135,12 +136,22 @@ let user = "jcerda"; in
         "alt-shift-5" = "move-node-to-workspace 5 --focus-follows-window";
         "alt-shift-6" = "move-node-to-workspace 6 --focus-follows-window";
         "alt-shift-7" = "move-node-to-workspace 7 --focus-follows-window";
+        "alt-shift-8" = "move-node-to-workspace 8 --focus-follows-window";
         "alt-tab" = "workspace-back-and-forth";
         "alt-shift-tab" = "move-workspace-to-monitor --wrap-around next";
         "alt-shift-comma" = "mode service";
         "alt-shift-enter" = "mode apps";
         # TODO: Fix hardcoded path
         "alt-enter" = "exec-and-forget open -a '/Users/jcerda/.nix-profile/Applications/Alacritty.app'";
+        "[workspace-to-monitor-force-assignment]"
+        "1 = 'main'"
+        "2 = 'main'"
+        "3 = 'main'"
+        "4 = 'main'"
+        "5 = 'main'"
+        "6 = ['secondary', 'main']"
+        "7 = ['secondary', 'main']"
+        "8 = ['secondary', 'main']"
       };
 
       mode.service.binding = {
